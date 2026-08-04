@@ -1,3 +1,8 @@
+Aah, samajh gaya! Code block ke andar numbers aur markdown headers ka issue lag raha tha.
+
+Yeh lo, bina kisi extra note, text ya step number ke—**poora clean `README.md` raw code:**
+
+```markdown
 # 🤖 AI Engineering Course
 
 <p align="center">
@@ -8,9 +13,9 @@
 
 <p align="center">
   <a href="#-overview"><img src="https://img.shields.io/badge/💡_OVERVIEW-2ea44f?style=for-the-badge&logoColor=white" /></a>
-  <a href="#-tech-stack"><img src="https://img.shields.io/badge/_TECH_STACK-218838?style=for-the-badge&logoColor=white" /></a>
+  <a href="#-tech-stack"><img src="https://img.shields.io/badge/⚙️_TECH_STACK-218838?style=for-the-badge&logoColor=white" /></a>
   <a href="#-roadmap--progress"><img src="https://img.shields.io/badge/🗺️_ROADMAP-2ea44f?style=for-the-badge&logoColor=white" /></a>
-  <a href="#-getting-started"><img src="https://img.shields.io/badge/_GETTING_STARTED-218838?style=for-the-badge&logoColor=white" /></a>
+  <a href="#-getting-started"><img src="https://img.shields.io/badge/🚀_GETTING_STARTED-218838?style=for-the-badge&logoColor=white" /></a>
 </p>
 
 ---
@@ -27,7 +32,7 @@
 
 ---
 
-##  Overview
+## 💡 Overview
 
 > [!TIP]
 > **Production-First Mindset:** Moving beyond toy wrappers to build scalable, low-latency, and reliable LLM systems using modern tooling (`uv`, Groq, Llama 3.3).
@@ -37,7 +42,7 @@
 
 ---
 
-##  Tech Stack
+## ⚙️ Tech Stack
 
 | Component | Technology | Description |
 | :--- | :--- | :--- |
@@ -48,21 +53,49 @@
 
 ---
 
-##  Roadmap & Progress
+## 🗺️ Roadmap & Progress
 
 ### 📂 Week 1: Core Fundamentals & Completions
 
 | Day | Topic | Key Concepts | Status |
 | :---: | :--- | :--- | :---: |
-| **Day 01** | First LLM Call | `Groq SDK Setup`, `.env` Configuration, Basic Completions | ✅ Completed |
-| **Day 02** | Prompt Engineering Parameters | System Prompts, Temperature Scaling, Role Definition | ✅ Completed |
-| **Day 03** | Tokens | --- | ⏳ In Progress |
+| **Day 01** | First LLM Call & Setup | `Groq SDK Setup`, `.env` Configuration, Role Messages (`system`, `user`, `assistant`), Basic Completions | ✅ Completed |
+| **Day 02** | Parameter Tuning & System Roles | Advanced System Prompts, Temperature Scaling, Top-p, Control Parameters | ✅ Completed |
+| **Day 03** | Tokens & Limits | Tokenization, Context Window Limits, Cost Optimization | ⏳ In Progress |
 
 ---
 
-##  Getting Started
+## 🚀 Getting Started
 
-### 1. Clone the repository
+Follow these steps to set up and run the repository locally on your machine.
+
+- **Clone the Repository**
 ```bash
 git clone [https://github.com/tushar1121s/ai-engineering-course.git](https://github.com/tushar1121s/ai-engineering-course.git)
 cd ai-engineering-course
+
+```
+
+* **Configure Environment Variables**
+Create a `.env` file inside the respective day's folder (e.g., `week_1/day01_first_llm_call/.env`):
+
+```env
+GROQ_API_KEY=your_groq_api_key_here
+
+```
+
+* **Run Any Daily Module Using `uv**`
+Navigate to the project root and run the execution script:
+
+```bash
+# Run Day 1 Hello LLM Script
+uv run python week_1/day01_first_llm_call/hello_llm.py
+
+# Run Day 2 System Prompt Script
+uv run python week_1/day02/sys_temp.py
+
+```
+
+```
+
+```
