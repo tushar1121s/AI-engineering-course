@@ -1,8 +1,3 @@
-Aah, samajh gaya! Code block ke andar numbers aur markdown headers ka issue lag raha tha.
-
-Yeh lo, bina kisi extra note, text ya step number ke—**poora clean `README.md` raw code:**
-
-```markdown
 # 🤖 AI Engineering Course
 
 <p align="center">
@@ -47,9 +42,9 @@ Yeh lo, bina kisi extra note, text ya step number ke—**poora clean `README.md`
 | Component | Technology | Description |
 | :--- | :--- | :--- |
 | **Language** | `Python 3.12+` | Core programming language |
-| **Tooling** | `uv` | Next-gen extremely fast Python package manager |
+| **Tooling** | `uv` | Next-generation extremely fast Python package manager |
 | **LLM Provider** | `Groq API` | Llama-3.3-70b-versatile for ultra-fast completions |
-| **Environment** | `python-dotenv` | Secure API key & config management |
+| **Environment** | `python-dotenv` | Secure API key & configuration management |
 
 ---
 
@@ -69,33 +64,68 @@ Yeh lo, bina kisi extra note, text ya step number ke—**poora clean `README.md`
 
 Follow these steps to set up and run the repository locally on your machine.
 
-- **Clone the Repository**
-```bash
-git clone [https://github.com/tushar1121s/ai-engineering-course.git](https://github.com/tushar1121s/ai-engineering-course.git)
-cd ai-engineering-course
+### 1. Clone the Repository
 
+```bash
+git clone https://github.com/tushar1121s/ai-engineering-course.git
+cd ai-engineering-course
 ```
 
-* **Configure Environment Variables**
-Create a `.env` file inside the respective day's folder (e.g., `week_1/day01_first_llm_call/.env`):
+---
+
+### 2. Configure Environment Variables
+
+Create a `.env` file inside the respective day's folder.
+
+Example:
+
+```
+week_1/day01_first_llm_call/.env
+```
+
+Add your API key:
 
 ```env
 GROQ_API_KEY=your_groq_api_key_here
-
 ```
 
-* **Run Any Daily Module Using `uv**`
-Navigate to the project root and run the execution script:
+> Keep your `.env` file private and never commit it to GitHub.
+
+---
+
+### 3. Run Daily Modules Using `uv`
+
+Navigate to the project root and execute scripts using `uv run`.
+
+#### Day 01: First LLM Call
 
 ```bash
-# Run Day 1 Hello LLM Script
 uv run python week_1/day01_first_llm_call/hello_llm.py
+```
 
-# Run Day 2 System Prompt Script
+#### Day 02: System Prompt & Temperature
+
+```bash
 uv run python week_1/day02/sys_temp.py
-
 ```
 
-```
+---
 
-```
+## 📌 Future Learning Path
+
+This repository will continue expanding into:
+
+- Advanced Prompt Engineering
+- Structured Outputs
+- Function Calling
+- RAG Systems
+- Vector Databases
+- AI Agents
+- Production Deployment
+- LLM Application Architecture
+
+---
+
+## 📜 License
+
+This project is licensed under the MIT License.
